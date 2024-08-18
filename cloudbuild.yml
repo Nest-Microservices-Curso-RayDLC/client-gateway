@@ -16,3 +16,5 @@ steps:
         "push",
         "southamerica-west1-docker.pkg.dev/tienda-microservicios-432921/image-registry/client-gateway",
       ]
+options:
+  logging: CLOUD_LOGGING_ONLY
