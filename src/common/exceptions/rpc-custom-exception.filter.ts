@@ -23,7 +23,7 @@ export class RpcCustomExceptionFilter implements ExceptionFilter {
             });
         }
         
-        response(500).json({
+        return response(500).json({
             code: 500,
             time: new Date().toISOString(),
             path: `${response.req.method} ${response.req.url}`,
